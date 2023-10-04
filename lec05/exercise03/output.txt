@@ -1,0 +1,5 @@
+*****"Escape Sequence Practice"*****
+DBIT is a university diploma designed to focus on:
+	1.Development
+	2.Implementation, and
+	3.Management of information systems.
