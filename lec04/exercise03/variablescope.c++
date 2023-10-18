@@ -27,7 +27,7 @@ int main() {
     age = 29; // try assigning a new value to the constant variable, which ideally shouldn't work
 
     // invoke/call the function in the main method
-    myFunction();
+    myFunction(4, 5);
     // cout << localVar; // This is not expected to work
 
     cout << globalVar << endl; // This is expected to work
