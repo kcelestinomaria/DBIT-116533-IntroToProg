@@ -32,15 +32,23 @@ int main() {
 
     // iterate through each operation, to perform and output the final answer
     switch (operation) {
+
+        // when ADD operation
         case 0:
             cout << numOne + numTwo << endl;
         break;
+
+        // when MULTIPLY operation
         case 1:
             cout << numOne * numTwo << endl;
         break;
+
+        // when SUBTRACT operation
         case 2:
             cout << numTwo - numOne << endl;
         break;
+
+        // when DIVIDE operation
         case 3:
             cout << numTwo / numOne << endl;
     }
