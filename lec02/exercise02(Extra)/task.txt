@@ -1,0 +1,2 @@
+https://www.ankitweblogic.com/cpp/graphics.php
+https://stungeye.github.io/Programming-1-Notes/docs/07-openframeworks-basics/02-drawing-shapes.html
