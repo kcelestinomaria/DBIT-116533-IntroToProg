@@ -1,0 +1,10 @@
+Implicit Type Casting
+Value of num1 before implicit type casting: 15.5
+Value of num1 after implicit type casting: 15.5
+Value of num2 after implicit type casting: 15
+
+
+Explicit Type Casting
+num1 before explicit conversion: 15.5
+num1 after explicit conversion: 15.5
+num2 after explicit conversion: 15
