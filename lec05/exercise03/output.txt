@@ -1,0 +1,7 @@
+Sum of two numbers(num1 & num2) is: 40
+Difference of two numbers(num1 & num2) is: -20
+Multiplication of two numbers(num1 & num2) is: 300
+Division of two numbers(num1 & num2) is: 0
+Remainder when both numbers are divided by each other: 10
+Incrememnt num1 by 1: 11
+Decrement num1 by 1: 10
