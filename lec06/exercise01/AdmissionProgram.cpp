@@ -18,6 +18,8 @@ int main() {
         cout << "Admit to Pre-School" << endl;
     } else if ( age < 1 ) {
         cout << "Reject" << endl;
+    } else {
+        cerr << "Error! Out of range" << endl;
     }
 
     return 0;
