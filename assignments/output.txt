@@ -1,0 +1,6 @@
+You are 23 years old
+Your Bank Balance is: 50001
+Have you paid your loans? - yes
+Your account has been active for 187 months
+
+Congratulations! You are qualified for a loan with us!
