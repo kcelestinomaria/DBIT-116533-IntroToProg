@@ -1,4 +1,4 @@
-## DBIT(Strathmore University) Classes & Assignments, IntroToProgramming
+## DBIT(Strathmore University) CLASSES & ASSIGNMENTS - IntroToProgramming Unit
 DBIT 'Intro To Programming' Class Practical Exercises & Assignments
 
 In this repo, you will find source and text files for each exercise, and assignment 
