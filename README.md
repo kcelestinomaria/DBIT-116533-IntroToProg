@@ -2,7 +2,7 @@
 DBIT 'Intro To Programming' Class Practical Exercises & Assignments
 
 In this repo, you will find source and text files for each exercise, and assignment 
-as provided in the DBIT, Strathmore University, 'Introduction To Programming' Class.
+as provided in the DBIT, Strathmore University, 'Introduction To Programming' Class as instructed by Mr. Barasa Frederick.
 
 ## GUIDANCE FOR REPO USERS & READERS
 - Exercises are categorized under each lecture as they were offered in the class
