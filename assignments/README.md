@@ -1,4 +1,4 @@
-## INTRODUCTION TO PROGRAMMING'(EVENING) ASSIGMENT 2
+## INTRODUCTION TO PROGRAMMING(EVENING) ASSIGNMENT 2
 - STUDENT NUMBER: 116533
 - STUDENT NAME: KARIUKI, CELESTINE
 
@@ -12,7 +12,7 @@ You will find:
 1. Source files for each of the 10 questions, 
 2. The output binary files for the source files(termed as ``./a.out``)
 2. The output text files of source files that do not prompt for user input,
-3. And for some source files their corresponding text 'test input' files which you can use to test various user inputs and see the program's output for each of them.
+3. And for some source files you have their corresponding text 'test input' files which you can use to test various user inputs and see the program's output for each of them.
 
 
 To run any C++ source file:
@@ -20,4 +20,4 @@ To run any C++ source file:
 - You will see ``a.out`` binary file generated in your folder.
 - You can finally run ``./a.out`` if you want to run the program.
 
-**NOTE: Question 1's source file, and text input files are directly under the /assignment/ folder, there is no separate folder for it.**
+**NOTE: Question 1's source file, and text input files are directly under the /assignments/ folder, there is no separate folder for it.**
