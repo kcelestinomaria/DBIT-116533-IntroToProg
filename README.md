@@ -1,4 +1,4 @@
-## DBIT(Strathmore University)-116533-IntroToProg
+## DBIT(Strathmore University) Classes & Assignments, IntroToProgramming
 DBIT 'Intro To Programming' Class Practical Exercises & Assignments
 
 In this repo, you will find source and text files for each exercise, and assignment 
@@ -11,4 +11,10 @@ as provided in the DBIT, Strathmore University, 'Introduction To Programming' Cl
 - Assignment 1 is not in this repository, but
 can be found in this separate repository(https://github.com/kcelestinomaria/DBIT-116533-ASSIGN) as it was requested separately during its submission
 
+The following are the credentials of the student who worked on this repo and its contents:
+1. Student No. - 116533
+2. Student Name - Kariuki, Celestine
+
 DBIT, 116533, Introduction To Programming, Strathmore University
+
+Copyright @ 2023
