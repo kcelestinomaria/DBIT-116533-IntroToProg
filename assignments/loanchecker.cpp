@@ -63,7 +63,7 @@ int main() {
 
     // We declare variables to hold our customer data in memory
     string birthDate; // when were you born?
-    int bankBalance; // what is your current bank balance?
+    double bankBalance; // what is your current bank balance?
     string loanPaid; // do you have an unpaid loan? - INPUT(YES or NO)
     string accountOpenDate;// When did you open your account ?
 
@@ -73,16 +73,16 @@ int main() {
     // We may have various customer input data so as to effectively test our program
     // for all different customer/user input, ensuring we cover edge cases
     // C++ maps hold data in key-value pairs
-    fileLines["Correct Test Customer Input Data"] = 1;
-    fileLines["Wrong test Customer Input Data - Option 1"] = 2;
-    fileLines["Wrong test Customer Input Data - Option 2"] = 3;
+    fileLines["Test Customer Account Data A"] = 1;
+    fileLines["Test Customer Account Data B"] = 2;
+    fileLines["Test Customer Account Data C"] = 3;
 
     // To go through our file, we need to loop through it
     // We first define a variable to hold a counter as we loop through the file
     int lineNumber = 0;
 
     // We then implement a 'while' statement to start the looping process through the file
-    while( lineNumber < fileLines["Correct Test Customer Input Data"] && getline(customerInputFile, birthDate)) {
+    while( lineNumber < fileLines["Test Customer Account A"] && getline(customerInputFile, birthDate)) {
 
         // the counter variable iterates from 0 as it loops through every line of the file up to the last line
         lineNumber++;
@@ -92,7 +92,7 @@ int main() {
     // We can change the fileLines Map's 'Key' to call any test customer input data we 
     // may want to run our program through, for my case I have used the one that evaluates
     // our program to TRUE, which is in the first line of the file
-    if (lineNumber == fileLines["Correct Test Customer Input Data"]) {
+    if (lineNumber == fileLines["Test Customer Account A"]) {
 
         istringstream lineStream(birthDate);
 
@@ -134,7 +134,7 @@ int main() {
         cout << "\n";
 
         // Let's check the user input from our file against the 'loan access' conditions
-       if (age > 365 * 22 && bankBalance > 50000 && loanPaid == "yes" && accountActive > 12 * 6) {
+       if (age > 365 * 22 && bankBalance > 50000.00 && loanPaid == "yes" && accountActive > 12 * 6) {
             cout << "Congratulations! You are qualified for a loan with us!" << endl;
        } else if (age > 365 * 22 && bankBalance < 50000 && loanPaid == "yes" && accountActive > 12 * 6) {
             cout << "Your bank balance is too low! Your loan application is ineligible" << endl;
