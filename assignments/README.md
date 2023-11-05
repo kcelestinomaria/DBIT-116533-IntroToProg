@@ -20,4 +20,4 @@ To run any C++ source file:
 - You will see ``a.out`` binary file generated in your folder.
 - You can finally run ``./a.out`` if you want to run the program.
 
-**NOTE: Question 1 is on the /assignment folder, there is no separate folder for it.**
+**NOTE: Question 1's source file, and text input files are directly under the /assignment/ folder, there is no separate folder for it.**
