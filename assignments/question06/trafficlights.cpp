@@ -23,7 +23,8 @@ const string RESET_TEXT = "\033[0m";
 
 int main() {
 
-    int timer = 0;
+
+    int timer = 0; // Useful for tracking state of the traffic light system
 
     while (true) {
 
@@ -45,7 +46,9 @@ int main() {
                 timer = 0;
                 break;
             default:
-                cout << 
-        }
-    }
+                cout << "Invalid traffic light colour";
+        };
+    };
+
+    return 0;
 }
