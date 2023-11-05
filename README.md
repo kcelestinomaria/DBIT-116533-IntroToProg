@@ -17,4 +17,6 @@ The following are the credentials of the student who worked on this repo and its
 
 DBIT, 116533, Introduction To Programming, Strathmore University
 
-Copyright @ 2023
+## LEGAL
+This work is provided under the open-source license type: **Unlicense (Public Domain Dedication)**.
+This means all copyright is waived for the source code, with maximum freedom for use and modification.
