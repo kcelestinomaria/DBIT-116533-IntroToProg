@@ -10,6 +10,7 @@ int main() {
     int userChoice;
 
     while (true) {
+
         cout << "WELCOME TO THIS MENU...." << endl;
         cout << "Select any one choice to continue." << endl;
         cout << "1. Calculate the area of a circle." << endl;
@@ -32,6 +33,7 @@ int main() {
             } else {
                 double areaCircle = M_PI * radius * radius; // Writing 'radius**2' yields semantic issues
                 cout << "The area of a circle with the radius " << radius << " is: " << areaCircle << endl;
+                cout << "\n\n";
             }
             
 
@@ -52,6 +54,7 @@ int main() {
             } else {
                 double areaRectangle = length * width;
                 cout << "The area of a rectangle with the length = " << length << " and width = " << width << " is: " << areaRectangle << endl;
+                cout << "\n\n";
             }
 
             break;
@@ -71,17 +74,23 @@ int main() {
                 } else {
                     double areaTriangle = 1/2 * base * height;
                     cout << "The area of a triangle with the height = " << height << " and base = " << base << " is: " << areaTriangle << endl;
+                    cout << "\n\n";
                 }
-                
+
+                break;
+
             case 4:
                 // Option 4 - Quit the program
                 cout << "You selected QUIT! Bye bye!";
-                return 0;
+                
+                break;
 
             default:
                 cout << "Invalid choice. Please select a number between 1 and 4.";
                 break;
         }
+
+        return 0;
     }
 
     return 0;

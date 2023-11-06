@@ -1,0 +1,7 @@
+[1;31mTraffic Light: RED[0m
+[1;33mTraffic Light: YELLOW[0m
+[1;32mTraffic Light: GREEN[0m
+[1;31mTraffic Light: RED[0m
+[1;33mTraffic Light: YELLOW[0m
+[1;32mTraffic Light: GREEN[0m
+[1;31mTraffic Light: RED[0m
