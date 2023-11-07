@@ -4,8 +4,10 @@
 
 using namespace std;
 
+// We hardcode the daily transaction limit
 const int dailyTxnLimit = 10000;
 
+// A struct holds the variables that store our data in memory locations
 struct CustomerAccountData {
     double accountBalance;
     string userConsent;
@@ -13,35 +15,40 @@ struct CustomerAccountData {
 };
 
 int main() {
-    // Simulated account information
+
+    // Load the simulated account information from the struct into the main scope
+    // this enables us to access the variables, and manipulate them
     CustomerAccountData customerAccountInstance;
 
     // Prompt the user for account data
-    cout << "Enter your account balance: KES";
+    cout << "Enter your account balance: KES ";
     cin >> customerAccountInstance.accountBalance;
     cout << "Enter 'WITHDRAW' or 'DEPOSIT': ";
     cin >> customerAccountInstance.userConsent;
-    cout << "Enter the withdrawal/deposit amount: KES";
+    cout << "Enter the withdrawal/deposit amount: KES ";
     cin >> customerAccountInstance.withdrawalAmount;
 
     // Create a map data structure to store test customer data
+    // The data is stored in key-value pairs(userAction/userConsent, customerAccountData struct)
     map<string, CustomerAccountData> testCustomerDataMap;
     
     // Define test customer data
+    // customer data is defined in the format: {accountBalance, userConsent/userAction, withdrawalAmount}
     testCustomerDataMap["WITHDRAW"] = {1000.0, "WITHDRAW", 500.0};
     testCustomerDataMap["DEPOSIT"] = {1000.0, "DEPOSIT", 200.0};
 
     // Check if the user input corresponds to a test customer data
+    // We use 'auto' C++ keyword to work with the iterator(it) 
     auto it = testCustomerDataMap.find(customerAccountInstance.userConsent);
     if (it != testCustomerDataMap.end()) {
         // Process the customer data
         if (customerAccountInstance.accountBalance < 0 && 
             !(customerAccountInstance.withdrawalAmount >= customerAccountInstance.accountBalance)) {
-            cout << "Your account is in unpaid debt, withdrawal unsuccessful: KES" << customerAccountInstance.accountBalance << endl;
+            cout << "Your account is in unpaid debt, withdrawal unsuccessful KES " << customerAccountInstance.accountBalance << endl;
         } else if (customerAccountInstance.withdrawalAmount > customerAccountInstance.accountBalance) {
             cout << "Your withdrawal amount is more than your account balance, withdrawal unsuccessful." << endl;
         } else if (customerAccountInstance.withdrawalAmount > dailyTxnLimit) {
-            cout << "Withdrawal amount exceeds the daily limit of: KES" << dailyTxnLimit << " , withdrawal unsuccessful." << endl;
+            cout << "Withdrawal amount exceeds the daily limit of: KES " << dailyTxnLimit << " , withdrawal unsuccessful." << endl;
         } else {
             // Process the withdrawal or deposit
             if (customerAccountInstance.userConsent == "WITHDRAW") {
