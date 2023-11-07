@@ -2,6 +2,14 @@
 #include <string>
 #include <map>
 
+/* ~~~ ABOUT THIS PROGRAM
+* We write a simple C++ program using if…else-if…else conditional (decision) structure to 
+* out an appropriate full name and grade of a student depending on the score entered by 
+* the user. 
+* We do prompt the user, on the console,
+* to input the full name of the student, the course and the score.
+*/
+
 using namespace std;
 
 int main() {
