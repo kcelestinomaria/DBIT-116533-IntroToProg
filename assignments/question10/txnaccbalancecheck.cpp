@@ -2,6 +2,17 @@
 #include <sstream>
 #include <map>
 
+/* ***ABOUT THIS PROGRAM***
+* This program simulates an ATM withdrawal program.
+* Our program specifically:
+1) Verifies a user's account balance
+2) Verifies a user's transaction limits
+* To make it feel like a full ATM,
+* I also added DEPOSIT capabilities,
+* aside from the WITHDRAWAL capabilities as spelled out in
+* the assignment(question 10)
+*/
+
 using namespace std;
 
 // We hardcode the daily transaction limit
