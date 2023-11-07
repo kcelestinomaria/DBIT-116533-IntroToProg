@@ -6,7 +6,7 @@
 
 This folder contains the solutions to all the questions asked in 
 assignment 2, of the DBIT 'Introduction To Programming'(EVENING) Class,
-as provided by Mr. Barasa.
+as provided by Mr. Barasa Frederick.
 
 You will find:
 1. Source files for each of the 10 questions, 
