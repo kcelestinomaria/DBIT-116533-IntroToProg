@@ -1,16 +1,23 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
+/* ~~ ABOUT THIS PROGRAM ~~
+* This program displays a menu with options,
+* whereby a user gets options to get the program
+* calculate any shape's area. The shapes provided
+* are a circle, triangle, rectangle, or a QUIT option!
+*/
 
-//const PI = 3.14;
+using namespace std;
 
 int main() {
 
     int userChoice;
 
+    // The menu display runs in a loop
     while (true) {
 
+        // We display the options to the user on the console
         cout << "WELCOME TO THIS MENU...." << endl;
         cout << "Select any one choice to continue." << endl;
         cout << "1. Calculate the area of a circle." << endl;
@@ -31,6 +38,8 @@ int main() {
                 cerr << "Invalid input! Radius cannot be 0 or a negative number.";
                 return -1; // Exit the program
             } else {
+
+                // Area of a Circle is Pi(3.14) x (Radius)**2
                 double areaCircle = M_PI * radius * radius; // Writing 'radius**2' yields semantic issues
                 cout << "The area of a circle with the radius " << radius << " is: " << areaCircle << endl;
                 cout << "\n\n";
@@ -52,6 +61,8 @@ int main() {
                 cerr << "Invalid input! Both values cannot be less than zero. Please select another option.";
                 return -1;
             } else {
+
+                // Area of a Rectangle is Length x Width
                 double areaRectangle = length * width;
                 cout << "The area of a rectangle with the length = " << length << " and width = " << width << " is: " << areaRectangle << endl;
                 cout << "\n\n";
@@ -72,7 +83,11 @@ int main() {
                     cerr << "Invalid input! Both values cannot be less than zero. Please select another option.";
                     return -1;
                 } else {
-                    double areaTriangle = 1/2 * base * height;
+
+                    // Area of a triangle = 1/2 x Base x Height
+                    // 1/2 in C++ results to integer division and a rounding-down calculation follows,
+                    // we therefore use '0.5'.
+                    double areaTriangle = 0.5 * base * height;
                     cout << "The area of a triangle with the height = " << height << " and base = " << base << " is: " << areaTriangle << endl;
                     cout << "\n\n";
                 }
