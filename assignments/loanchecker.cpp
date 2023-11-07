@@ -69,11 +69,16 @@ int main() {
     int accountActive = chrono::duration_cast<chrono::hours>(account_age_diff).count() / 24;
     int accountsActive_in_months = accountActive / 30;
 
+
+    // To prevent the program from displaying and calculating the bankBalance in this format '1.29377e+06' i.e 'intE'
+    // we cast the 'double' variable of bankBalance into an integer format so its easily readable
+    int int_bankBalance = static_cast<int>(bankBalance);
+
     // Display user's account information to the console
     cout << "~~ HERE IS YOUR ACCOUNT INFORMATION ~~" << endl;
     cout << ".......................................\n";
     cout << "You are " << age_in_years << " years old" << endl;
-    cout << "Your Bank Balance is: KES " << bankBalance << endl;
+    cout << "Your Bank Balance is: KES " << int_bankBalance << endl;
 
     // 2 ^ 64 is the highest number that a computer can calculate to
     // To prevent buffer overflows & other number calculation errors, we make sure the bank balance doesn't reach that number
