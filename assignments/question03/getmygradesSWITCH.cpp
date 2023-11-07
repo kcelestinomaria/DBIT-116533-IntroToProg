@@ -2,6 +2,11 @@
 #include <string>
 #include <map>
 
+/* ~~~ ABOUT THIS PROGRAM ~~
+* Here, we've implemented the program in question 2 
+* using a selection decision structure (switch 
+* case statement)
+*/
 using namespace std;
 
 int main() {
