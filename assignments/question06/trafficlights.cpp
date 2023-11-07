@@ -3,6 +3,14 @@
 #include <string>
 #include <thread>
 
+/* ~~ ABOUT THIS PROGRAM ~~
+* This program simulates a traffic light
+* It displays the color of the traffic light(red, yellow, and green)
+* based on a timer.
+* We use a switch...case statement to control the behaviour of the traffic light,
+* as it outputs the actual colors on the console leveraging ANSI escape codes
+* for text color.
+*/
 using namespace std;
 
 /*
