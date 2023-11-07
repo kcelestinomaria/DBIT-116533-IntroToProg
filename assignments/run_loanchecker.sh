@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Running the Loan Checker C++ program..."
-g++ correctloanchecker.cpp
+g++ loanchecker.cpp
 ./a.out
