@@ -1,12 +1,27 @@
 #include <iostream>
 
+/* **ABOUT THIS PROGRAM**
+* This program calculates the total cost of 
+* a shopping cart after applying different discount percentages
+* based on the purchase amount.
+* We use if, else if, and else statements to determine which
+* discount to apply
+*/
+
+using namespace std;
+
+
 int main() {
+
+    // Declare the 'purchase amount' variable
     double purchaseAmount;
+
+    // Declare and initialize the total cost to 0(mutable as it changes during checkout)
     double totalCost = 0.0;
 
     // Prompt the user for the purchase amount
-    std::cout << "Enter the purchase amount: KES ";
-    std::cin >> purchaseAmount;
+    cout << "Enter the purchase amount: KES ";
+    cin >> purchaseAmount;
 
     // Calculate discounts based on purchase amount
     if (purchaseAmount < 50.0) {
@@ -19,8 +34,8 @@ int main() {
         totalCost = purchaseAmount * 0.7; // 30% discount
     }
 
-    // Display the total cost after applying the discount
-    std::cout << "Total cost after applying the discount: KES " << totalCost << std::endl;
+    // We finally display the total cost after applying the discount
+    cout << "Total cost after applying the discount: KES " << totalCost << endl;
 
     return 0;
 }
