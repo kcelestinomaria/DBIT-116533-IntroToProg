@@ -16,13 +16,13 @@ You will find:
 
 
 To run any C++ source file in this repository:
-- Execute ``./run_filename.sh`` in your command line interface to run your program.
+- Make the ``run_filename.sh`` executable by changing its file permissions*
+- Invoke ``./run_filename.sh`` in your command line interface to run your program.
 *When you type``./run_filename.sh`` it:
 1) Calls the g++ compiler, 
 2) The g++ compiler generates a binary file(``./a.out``) for the source file
 3) And finally, still in the same file, the binary file is called, and the program runs!
 
-**Make sure that you make the ``run_filename.sh`` executable, by changing the permissions**
-In Linux, you make it executable by running this command: ``chmod +x run_filename.sh``
+*In Linux, you make ``run_filename.sh`` executable by running this command: ``chmod +x run_filename.sh``.
 
 **NOTE: Question 1's source file, and text input files are directly under the /assignments/ folder, there is no separate folder for it.**
