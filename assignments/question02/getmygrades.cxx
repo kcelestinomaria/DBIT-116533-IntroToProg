@@ -55,16 +55,19 @@ int main() {
     // or when it iterates through a loop
     char grade = '?';
 
-    // We use a 'for' statement and several map in-built methods to successfully
-    // loop through the 'gradeDistribution' map data structure, and output 
-    // a grade from its corresponding inputted score.
-    for (map<int, char>::const_iterator it = gradeDistribution.begin(); it != gradeDistribution.end(); ++it) {
-        if (courseScore >= it->first) {
-            grade = it->second;
-        } else {
-            break;
-        }
+    // Determine the grade based on the course score using if...else-if...else statements
+    if (courseScore >= 70) {
+        grade = gradeDistribution[70]; // Assign the corresponding grade for a score of 70 or more
+    } else if (courseScore >= 60) {
+        grade = gradeDistribution[60]; // Assign the corresponding grade for a score between 60 and 69
+    } else if (courseScore >= 50) {
+        grade = gradeDistribution[50]; // Assign the corresponding grade for a score between 50 and 59
+    } else if (courseScore >= 40) {
+        grade = gradeDistribution[40]; // Assign the corresponding grade for a score between 40 and 49
+    } else {
+        grade = gradeDistribution[0]; // Assign the corresponding grade for a score less than 40
     }
+
 
     // Now output the code
     cout << "Hi " << fullName << endl;
