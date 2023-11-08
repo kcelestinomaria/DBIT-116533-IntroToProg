@@ -84,7 +84,7 @@ int main() {
     // To prevent buffer overflows & other number calculation errors, we make sure the bank balance doesn't reach that number
     if (bankBalance > (pow(2, 64 - 1))) {
         cout << "Invalid input! The bank balance is beyond the set limit" << endl;
-        return -1; // Exit the program
+        return -1; // Exit the program, with an error code
     }
     cout << "Do you have unpaid loans? - " << loanPaid << endl;
     cout << "Your account has been active for " << accountsActive_in_months << " months" << endl;
