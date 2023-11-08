@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Running the 'Check' Maximum Numbers C++ program..."
+echo "Running the Get Grades C++ program..."
 g++ getmygrades.cxx
 ./a.out
