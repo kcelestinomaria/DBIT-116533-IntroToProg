@@ -9,6 +9,7 @@ using namespace std;
 */
 int main() {
 
+    // Declare variables
     int firstNum, secondNum, thirdNum;
 
     cout << "Enter the first number: " << endl;
@@ -22,6 +23,7 @@ int main() {
 
     int minimum_number;
 
+    // Loop to check for minimum
     switch (firstNum - secondNum) {
         case 0:
             cout << "First Number & Second Number are equal" << endl;
