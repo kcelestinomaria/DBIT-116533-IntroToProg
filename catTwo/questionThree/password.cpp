@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/*
+* Admission Number: 116533
+* Course DBIT Sept-Dec 2023
+* Strathmore University
+*/
+
 int main() {
 
     string userName_0 = "Brian127";
